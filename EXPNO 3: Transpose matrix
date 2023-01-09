@@ -1,0 +1,40 @@
+rows = int(input("Enter the Number of rows : " ))
+column = int(input("Enter the Number of Columns: "))
+print("Enter the elements of Matrix:")
+matrix= [[int(input()) for i in range(column)] for i in range(rows)]
+print("-------Your  Matrix is---------")
+for n in matrix:
+    print(n)
+result =[[0 for i in range(rows)] for j in range(column)]
+for r in range(rows):
+   for c in range(column):
+        result[c][r] = matrix[r][c]
+print("Transpose matrix is: ")
+for r in result:
+    print(r)
+    
+    OUT PUT:
+    Enter the Number of rows : 3
+Enter the Number of Columns: 4
+Enter the elements of Matrix:
+4
+6
+8
+5
+3
+2
+7
+7
+2
+6
+2
+7
+-------Your  Matrix is---------
+[4, 6, 8, 5]
+[3, 2, 7, 7]
+[2, 6, 2, 7]
+Transpose matrix is: 
+[4, 3, 2]
+[6, 2, 6]
+[8, 7, 2]
+[5, 7, 7]
