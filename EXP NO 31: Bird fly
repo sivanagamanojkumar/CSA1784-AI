@@ -1,0 +1,26 @@
+bird(sparrow).
+bird(eagle).
+bird(duck).
+bird(crow).
+~bird(ostrich).
+bird(puffin).
+bird(swan).
+bird(albatross).
+bird(starling).
+bird(owl).
+bird(kingfisher).
+bird(thrush).
+can_fly(X):-bird(X).
+can_fly(ostrich):-fail.
+
+OUT PUT 
+?- bird(x).
+false.
+
+?- bird(X).
+X = sparrow ;
+X = eagle ;
+X = duck ;
+X = crow ;
+X = puffin ;
+X = swan 
